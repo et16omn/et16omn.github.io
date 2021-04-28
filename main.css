@@ -13,6 +13,7 @@ $medium-dark: lighten($dark, 25%);
 
 body {
   padding-top: 3rem;
+  color: blue;
 }
 
 .hero {
