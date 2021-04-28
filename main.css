@@ -3,6 +3,9 @@ $secondary: #EECDA3;
 $dark: #222;
 $medium-dark: lighten($dark, 25%);
 
+.hej{
+ padding: 100px; 
+}
 
 @mixin section-padding {
   padding: 10vh 0;
