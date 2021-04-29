@@ -8,7 +8,7 @@ $medium-dark: lighten($dark, 25%);
 }
 
 @mixin section-padding {
-  padding: 10vh 0;
+  padding: 30vh 0;
   @media (min-width: 768px) { // I'd prefer this to be the $md Bootstrap grid variable
     padding: 20vh 0;
   }
