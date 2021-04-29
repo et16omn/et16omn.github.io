@@ -27,7 +27,7 @@ body {
 .features {
   @include section-padding;
   background: $dark;
-  color: white;
+  color: black;
 }
 
 .pricing {
