@@ -2,39 +2,390 @@
 <html>
 <head>
 <style>
+@media screen() {
+  
+}
+
+p{
+  font-family: "MyAvenir",trebuchet ms;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+#section0{
+  padding-top: 40vh;
+
+
+}
+
 #section1 {
-  height: 600px;
-  background-color: pink;
+ min-height: 100vh;
+
 }
 
 #section2 {
   height: 100vh;
-  background-color: yellow;
+ 
 }
-p {
-  text-align: center;
+#section3 {
+  height: 200vh;
+
 }
+
+.side-bar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  
+  flex-direction: column;
+  align-items: center;
+
+  right: 20px;
+  top: 3%;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  font-family: "MyAvenir",trebuchet ms !important;
+  text-decoration: none;
+  color: #969696;
+  display: block;
+  font-weight: 400;
+  transition: all ease-out 
+    250ms;
+  padding: 5px;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  color: #97223f;
+  font-weight: 600;
+}
+.active {
+  color: #97223f; 
+  font-weight: 600;
+
+}
+
+#startID{
+    color: #97223f;
+    font-family: "MyAvenir",trebuchet ms !important;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    animation: bounce 1.2s linear;
+    animation-delay: 0.2s;
+}
+h1.start:hover{
+  color: #97223f;
+
+}
+h2.name{
+  color: #969696;
+    font-family: "MyAvenir",trebuchet ms !important;
+    font-style:initial;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 50vh;
+
+}
+
+div.text_container{
+  margin: 0 auto;
+  width: 700px;
+  position: relative;
+}
+div.text_container2{
+  margin: 0 auto;
+  width: 700px;
+  position: relative;
+}
+
+img.image{
+  position: relative;
+  padding-right: 30px;
+  padding-top: 20px;
+
+  width: 280px;
+  height: auto;
+  float: left;
+}
+p.text{
+  width: 300px;
+  float: left;
+  padding-right: 30px;
+}
+
+@keyframes bounce{
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+
+}
+
+strong{
+  
+}
+
+h1.projektTitel{
+  color: #969696;
+  font-family: "MyAvenir",trebuchet ms !important;
+  font-size: 25px;
+}
+
+div.cont{
+    position: relative;
+    width: 700px;
+    height: 2200px;
+    margin: 400px auto;
+  
+}
+
+div.projekt{
+  margin-top: 500px;
+  height: 400px;
+  margin: 0 auto;
+  width: 100%;
+  top: 10vh;
+  padding-top: 50px;
+}
+
+div.projekt:hover{
+  color: #97223f;
+}
+
+
+img.projektImage{
+  margin-top: auto;
+  position: relative;
+  padding-right: 30px;
+  padding-top: 20px;
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+hr{
+  color: #97223f;
+}
+
 </style>
 </head>
 <body>
+  <div class="side-bar">
+    <nav class="navigation">
+      <ul>
+        <li>
+          <a href="#section0" onclick="reset_animation()" >hem</a>
+          <a href="#section1">olov molin</a>
+          <a href="#section3">projekt</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-<h1>Smooth Scroll</h1>
 
-<div class="main" id="section1">
-  <h2>Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
-</div>
 
-<div class="main" id="section2">
-  <h2>Section 2</h2>
+  <section id="section0">
+    
+    <h1 class="start" id="startID">
+      UX Design
+    </h1>
+    <h2 class="name">
+      Olov Molin
+    </h2>
+
+
+
+  </section>
+
+<section id="section1">
+ 
+
+  <div class="text_container">
+    <img class="image" src="arconi_olov_molin.jpg" alt="Porträtt" >
+    <p class="text">
+     <strong style="font-size: 20px;">om mig</strong> 
+     <br>
+    Jag är en stundent vid Umeå universitet som efter tidigare arbetslivserfarenhet är van att leda samt arbeta i projekt - såväl självständigt som i team. Jag vill skapa riktigt bra digitala tjänster som skapar användarnytta och samhällsnytta. Jag har erfarenhet av att följa grafiska ramverk och identiteter men även att skapa helt ny design från skiss till färdig produkt för olika plattformar. 
+    <br>
+    <br>
+    Jag älskar design och gillar att kombinera strategi och kreativt tänkande. God design är för mig design som inte behöver förklaringar, men som gärna kittlar våra sinnen och gör nytta. Designprocessen startar i research för att få förståelse för användaren. Idéstadiet leder till prototyper som testas och valideras, för att sedan göra design.
+    </p>
+  </div>
+
+  <div class="text_container2">
+    <p class="text">
+      <br>
+      <strong style="font-size: 25px; left: -103%; position: relative;">kompetens</strong>
+      <br>
+    </p>
+
+    <p class="text">
+      <strong style="font-size: 20px;">utbildning</strong>
+      <br>
+      <strong>civilingenjörsprogrammet i interaktion och design</strong>, umeå universitet 2018 - pågående
+      <br>
+      <br>
+      <strong>teknikprogrammet, inriktning design</strong>, härnösands gymnasium 2010 - 2013
+    </p>
+    <p class="text">
+      <strong style="font-size: 20px;">verktyg</strong>
+      <br>
+      Adobe-suiten, Figma, AutoCad, Revit, SketchUp, Office-paketet. 
+    </p>
+    <p class="text">
+      <strong style="font-size: 20px;">programmeringsbakgrund</strong>
+      <br>
+      Java, C, C#,  C, JavaScript, VBA, HTML, CSS, SQL, Matlab
+    </p>
+    <p class="text" style="padding-top: 5px;">
+      <strong style="font-size: 20px; color:#97223f;">kontakt</strong>
+      <br>
+      070 261 69 36
+      <br>
+      olov.molin@hotmail.com
+
+
+
+    </p>
+  </div>
+
+
+
+</section>
+
+<!-- <section class="main" id="section2">
+  <h2>Om mig</h2>
   <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
-</div>
+</section> -->
+
+<section class="main" id="section3"> 
+  <div class="cont">
+
+
+        <div class="projekt">
+
+          <img class="projektImage" src="arconi_olov_molin.jpg" alt="Porträtt" >
+
+            <h1 class="projektTitel">
+              augmented reality - som medicinskt hjälpmedel
+            </h1>
+            <p>
+              <strong>projekttyp:</strong> skolprojekt i grupp
+            </p>
+            <p>
+              <strong>tidsram:</strong> april 2021 till och med maj 2021
+            </p>
+            <p>
+              <strong>min roll:</strong> användarstudier, utvecklare, konecptutvecklare
+            </p>
+   
+            <p>
+                <strong>beskrivning</strong>
+                <br>
+                I sammarbete med Livsmedecin, som är en del av region västerbottens arbets- och beteendemedicinskt centrum, har vi tagit fram och utvärderat ett koncept, med tillhörande prototyp, om hur förstärkt verklighet kan användas som hjälpmedel för att behandla och förebygga kroppsliga skador som orskats av monotoma rörelser.  
+            </p>
+
+
+        </div>
+        <hr>  
+        <div class="projekt">
+
+          <img class="projektImage" src="arconi_olov_molin.jpg" alt="Porträtt" >
+
+          <h1 class="projektTitel">
+            bildstödsplattform - design av ny plattform
+          </h1>
+          <p>
+            <strong>projekttyp:</strong> skolprojekt i grupp
+          </p>
+          <p>
+            <strong>tidsram:</strong> april 2021 till och med maj 2021
+          </p>
+          <p>
+            <strong>min roll:</strong> användarstudier, prototyputveckling
+          </p>
+          <p>
+              <strong>beskrivning</strong>
+              <br>
+              Specialpedagogiska myndigheten har tidigare erbjudit flera olika webtjänster och bildbanker för att skapa bildstöd till elever i undervisning och vardagen. Vi fick i uppdrag att ta fram en prototyp där dessa tjänster är samordnade under en och samma plattform.
+          </p>
+          
+
+      </div>
+
+    </div>
+
+</section>
 
 </body>
+
+<script>
+
+
+function reset_animation() {
+  var el = document.getElementById('startID');
+  el.style.animation = 'none';
+  el.offsetHeight; /* trigger reflow */
+  el.style.animation = null; 
+}
+
+
+
+
+  // Get all sections that have an ID defined
+const sections = document.querySelectorAll("section[id]");
+
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+  
+  // Now we loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+    
+    /*
+    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+    */
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+    } else {
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+    }
+  });
+}
+
+</script>
+
 </html>
